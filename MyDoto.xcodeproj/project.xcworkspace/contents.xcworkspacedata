@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/bohdan/Desktop/MyDoto/MyDoto/UsernameController .swift">
+   </FileRef>
+   <FileRef
+      location = "group:../../Labs/Labs/Main.storyboard">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

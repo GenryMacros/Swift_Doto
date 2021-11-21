@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180D70236C90C66F4A4C2373 /* Pods_MyDoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403E53722B1F4CE1ECC4B984 /* Pods_MyDoto.framework */; };
+		47194D94274A705F0079C750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194D93274A705F0079C750 /* AppDelegate.swift */; };
+		47194D96274A705F0079C750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194D95274A705F0079C750 /* SceneDelegate.swift */; };
+		47194D98274A705F0079C750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194D97274A705F0079C750 /* ViewController.swift */; };
+		47194D9D274A70630079C750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47194D9C274A70630079C750 /* Assets.xcassets */; };
+		47194DA0274A70630079C750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47194D9E274A70630079C750 /* LaunchScreen.storyboard */; };
+		47194DBB274A72420079C750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47194DBA274A72420079C750 /* Main.storyboard */; };
+		47194DC7274AAA130079C750 /* TableViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194DC6274AAA130079C750 /* TableViewControlelr.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FEB753E40878FF8A1BA09E5 /* Pods-MyDoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDoto.debug.xcconfig"; path = "Target Support Files/Pods-MyDoto/Pods-MyDoto.debug.xcconfig"; sourceTree = "<group>"; };
+		403E53722B1F4CE1ECC4B984 /* Pods_MyDoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47194D90274A705F0079C750 /* MyDoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47194D93274A705F0079C750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47194D95274A705F0079C750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		47194D97274A705F0079C750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47194D9C274A70630079C750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47194D9F274A70630079C750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47194DA1274A70630079C750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47194DBA274A72420079C750 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		47194DC6274AAA130079C750 /* TableViewControlelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControlelr.swift; sourceTree = "<group>"; };
+		88DFF5E9C5A3E202CF6049D3 /* Pods-MyDoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDoto.release.xcconfig"; path = "Target Support Files/Pods-MyDoto/Pods-MyDoto.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47194D8D274A705F0079C750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180D70236C90C66F4A4C2373 /* Pods_MyDoto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47194D87274A705F0079C750 = {
+			isa = PBXGroup;
+			children = (
+				47194D92274A705F0079C750 /* MyDoto */,
+				47194D91274A705F0079C750 /* Products */,
+				7D919822BCA0B8ABBF410611 /* Pods */,
+				D0CEEF5AFDBD509EE2CD3E59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		47194D91274A705F0079C750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47194D90274A705F0079C750 /* MyDoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47194D92274A705F0079C750 /* MyDoto */ = {
+			isa = PBXGroup;
+			children = (
+				47194D93274A705F0079C750 /* AppDelegate.swift */,
+				47194DBA274A72420079C750 /* Main.storyboard */,
+				47194D95274A705F0079C750 /* SceneDelegate.swift */,
+				47194D97274A705F0079C750 /* ViewController.swift */,
+				47194D9C274A70630079C750 /* Assets.xcassets */,
+				47194D9E274A70630079C750 /* LaunchScreen.storyboard */,
+				47194DA1274A70630079C750 /* Info.plist */,
+				47194DC6274AAA130079C750 /* TableViewControlelr.swift */,
+			);
+			path = MyDoto;
+			sourceTree = "<group>";
+		};
+		7D919822BCA0B8ABBF410611 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB753E40878FF8A1BA09E5 /* Pods-MyDoto.debug.xcconfig */,
+				88DFF5E9C5A3E202CF6049D3 /* Pods-MyDoto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0CEEF5AFDBD509EE2CD3E59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403E53722B1F4CE1ECC4B984 /* Pods_MyDoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47194D8F274A705F0079C750 /* MyDoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47194DA4274A70630079C750 /* Build configuration list for PBXNativeTarget "MyDoto" */;
+			buildPhases = (
+				D069C8E4F36D4ECF5E7CF88F /* [CP] Check Pods Manifest.lock */,
+				47194D8C274A705F0079C750 /* Sources */,
+				47194D8D274A705F0079C750 /* Frameworks */,
+				47194D8E274A705F0079C750 /* Resources */,
+				D3B1F7BC927A86C964C90AF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDoto;
+			productName = MyDoto;
+			productReference = 47194D90274A705F0079C750 /* MyDoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47194D88274A705F0079C750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					47194D8F274A705F0079C750 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 47194D8B274A705F0079C750 /* Build configuration list for PBXProject "MyDoto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47194D87274A705F0079C750;
+			productRefGroup = 47194D91274A705F0079C750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47194D8F274A705F0079C750 /* MyDoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47194D8E274A705F0079C750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47194DBB274A72420079C750 /* Main.storyboard in Resources */,
+				47194DA0274A70630079C750 /* LaunchScreen.storyboard in Resources */,
+				47194D9D274A70630079C750 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D069C8E4F36D4ECF5E7CF88F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B1F7BC927A86C964C90AF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoto/Pods-MyDoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDoto/Pods-MyDoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDoto/Pods-MyDoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47194D8C274A705F0079C750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47194D98274A705F0079C750 /* ViewController.swift in Sources */,
+				47194D94274A705F0079C750 /* AppDelegate.swift in Sources */,
+				47194D96274A705F0079C750 /* SceneDelegate.swift in Sources */,
+				47194DC7274AAA130079C750 /* TableViewControlelr.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47194D9E274A70630079C750 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47194D9F274A70630079C750 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47194DA2274A70630079C750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47194DA3274A70630079C750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47194DA5274A70630079C750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FEB753E40878FF8A1BA09E5 /* Pods-MyDoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ulti1235-gmail.com.MyDoto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47194DA6274A70630079C750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DFF5E9C5A3E202CF6049D3 /* Pods-MyDoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyDoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ulti1235-gmail.com.MyDoto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47194D8B274A705F0079C750 /* Build configuration list for PBXProject "MyDoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47194DA2274A70630079C750 /* Debug */,
+				47194DA3274A70630079C750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47194DA4274A70630079C750 /* Build configuration list for PBXNativeTarget "MyDoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47194DA5274A70630079C750 /* Debug */,
+				47194DA6274A70630079C750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47194D88274A705F0079C750 /* Project object */;
+}
