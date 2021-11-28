@@ -19,8 +19,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGf-w3-yyL">
-                                <rect key="frame" x="189" y="476" width="37" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAB-k7-6ne">
+                                <rect key="frame" x="86" y="369" width="242" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfu-sT-HIC">
+                                <rect key="frame" x="86" y="431" width="242" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAL-eh-wEq">
+                                <rect key="frame" x="86" y="411" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rh-wf-yah">
+                                <rect key="frame" x="86" y="340" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGf-w3-yyL">
+                                <rect key="frame" x="188.5" y="473" width="37" height="30"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -29,39 +54,14 @@
                                     <segue destination="uZd-7U-YBA" kind="show" destinationCreationSelector="toChannelsList:" id="93K-ed-gcy"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAB-k7-6ne">
-                                <rect key="frame" x="67" y="369" width="280" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfu-sT-HIC">
-                                <rect key="frame" x="67" y="434" width="280" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAL-eh-wEq">
-                                <rect key="frame" x="67" y="411" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rh-wf-yah">
-                                <rect key="frame" x="67" y="340" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mAB-k7-6ne" firstAttribute="centerX" secondItem="iGf-w3-yyL" secondAttribute="centerX" id="D5W-cq-vXb"/>
-                            <constraint firstItem="mAB-k7-6ne" firstAttribute="leading" secondItem="XTi-sU-U8v" secondAttribute="leadingMargin" constant="4" id="LVF-5J-fFy"/>
+                            <constraint firstItem="mAB-k7-6ne" firstAttribute="leading" secondItem="XTi-sU-U8v" secondAttribute="leadingMargin" constant="66" id="LVF-5J-fFy"/>
                             <constraint firstItem="mAB-k7-6ne" firstAttribute="centerX" secondItem="XTi-sU-U8v" secondAttribute="centerX" id="TZA-ka-Zn5"/>
-                            <constraint firstItem="mAB-k7-6ne" firstAttribute="centerY" secondItem="XTi-sU-U8v" secondAttribute="centerY" id="kpO-Rc-V3y"/>
-                            <constraint firstItem="iGf-w3-yyL" firstAttribute="top" secondItem="mAB-k7-6ne" secondAttribute="bottom" constant="8" symbolic="YES" id="qay-j3-fVP"/>
+                            <constraint firstItem="mAB-k7-6ne" firstAttribute="centerY" secondItem="XTi-sU-U8v" secondAttribute="centerY" constant="-62" id="kpO-Rc-V3y"/>
+                            <constraint firstItem="iGf-w3-yyL" firstAttribute="top" secondItem="mAB-k7-6ne" secondAttribute="bottom" constant="70" id="qay-j3-fVP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="7il-12-rW8" userLabel="Subscribe to or create a channel" colorLabel="IBBuiltInLabel-Red"/>
@@ -74,7 +74,7 @@
             </objects>
             <point key="canvasLocation" x="1928.985507246377" y="588.61607142857144"/>
         </scene>
-        <!--Manage or add channel-->
+        <!--Channels-->
         <scene sceneID="A2I-fv-Cd5">
             <objects>
                 <viewController id="uZd-7U-YBA" customClass="tableViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,15 +90,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="channelCell" id="eoA-sX-75w">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" id="rhs-10-pIQ" customClass="None">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eoA-sX-75w" id="wFd-G0-rRs">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rhs-10-pIQ" id="PBc-nN-Fem">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="R2a-q9-o74" kind="show" identifier="showList" id="RwG-NC-npb"/>
+                                            <segue destination="R2a-q9-o74" kind="show" id="2XR-N4-VYf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -113,24 +113,27 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Manage or add channel" id="OZt-k8-dhB" userLabel="Subscribed lists">
+                    <navigationItem key="navigationItem" title="Channels" id="OZt-k8-dhB" userLabel="Subscribed lists">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Tl-gP-aud">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="WwI-2e-9SL" kind="show" id="WyY-ZS-jGa"/>
+                                <segue destination="WwI-2e-9SL" kind="show" destinationCreationSelector="on_create_tap:" id="WyY-ZS-jGa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="F9U-4C-hOV" id="VwX-wx-CYC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rf-lt-w6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2624.6376811594205" y="588.61607142857144"/>
         </scene>
-        <!--Task Item List View Controller-->
+        <!--Tasks-->
         <scene sceneID="M4G-5Q-wZS">
             <objects>
-                <viewController id="R2a-q9-o74" customClass="TaskItemListViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TasksTableViewController" id="R2a-q9-o74" customClass="TasksTableViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6yR-uN-GeV"/>
                         <viewControllerLayoutGuide type="bottom" id="BEz-6K-sFe"/>
@@ -155,6 +158,8 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="TasksTable"/>
                         <constraints>
                             <constraint firstItem="CAr-iJ-JZa" firstAttribute="top" secondItem="DvL-XV-juq" secondAttribute="top" id="9iK-Dv-as2"/>
                             <constraint firstAttribute="trailing" secondItem="CAr-iJ-JZa" secondAttribute="trailing" id="Rno-AA-yZO"/>
@@ -162,23 +167,26 @@
                             <constraint firstItem="CAr-iJ-JZa" firstAttribute="bottom" secondItem="BEz-6K-sFe" secondAttribute="top" id="pcP-x5-In5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rbM-L5-wa9">
+                    <navigationItem key="navigationItem" title="Tasks" id="rbM-L5-wa9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="J4v-1L-tuI">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="ESK-6M-IEm" kind="show" id="vcE-66-FLE"/>
+                                <segue destination="ESK-6M-IEm" kind="show" destinationCreationSelector="on_task_add_tap:" id="vcE-66-FLE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="CAr-iJ-JZa" id="adg-b7-qmb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8F3-Bk-RXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3503" y="899"/>
         </scene>
-        <!--Task Item View Controller-->
+        <!--Add Task View Controller-->
         <scene sceneID="Xfu-5f-Mw7">
             <objects>
-                <viewController id="ESK-6M-IEm" customClass="TaskItemViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ESK-6M-IEm" customClass="AddTaskViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7ze-MJ-X13"/>
                         <viewControllerLayoutGuide type="bottom" id="md5-FS-mJh"/>
@@ -198,7 +206,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="addTaskItemAndReturn:" destination="ESK-6M-IEm" eventType="touchUpInside" id="FWm-Cf-pFp"/>
+                                    <action selector="on_button_tap:" destination="ESK-6M-IEm" eventType="touchUpInside" id="dw5-of-yF3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -212,6 +220,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kwb-19-uP5"/>
+                    <connections>
+                        <outlet property="text_field" destination="1a3-ka-9Hh" id="OFu-yD-DUu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnd-ql-Kuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,7 +250,7 @@
         <!--Channel add controller-->
         <scene sceneID="42q-AJ-pAf">
             <objects>
-                <viewController id="WwI-2e-9SL" userLabel="Channel add controller" customClass="TaskItemViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WwI-2e-9SL" userLabel="Channel add controller" customClass="AddChannelViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9xT-UY-Q5P"/>
                         <viewControllerLayoutGuide type="bottom" id="tbS-fK-WXt"/>
@@ -259,7 +270,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="addTaskItemAndReturn:" destination="WwI-2e-9SL" eventType="touchUpInside" id="fsS-mT-w5J"/>
+                                    <action selector="on_button_tap:" destination="WwI-2e-9SL" eventType="touchUpInside" id="s4R-la-3fP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -273,6 +284,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3xC-wT-SLS"/>
+                    <connections>
+                        <outlet property="text_field" destination="0BE-j1-ZXx" id="R5d-zG-wFm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVz-OM-wtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,6 +294,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

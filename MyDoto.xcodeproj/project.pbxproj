@@ -15,6 +15,12 @@
 		47194DA0274A70630079C750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47194D9E274A70630079C750 /* LaunchScreen.storyboard */; };
 		47194DBB274A72420079C750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47194DBA274A72420079C750 /* Main.storyboard */; };
 		47194DC7274AAA130079C750 /* TableViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194DC6274AAA130079C750 /* TableViewControlelr.swift */; };
+		47383A1D2752EEEE00A4650E /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A1C2752EEEE00A4650E /* TasksTableViewController.swift */; };
+		47383A29275396C200A4650E /* AddChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A28275396C200A4650E /* AddChannelViewController.swift */; };
+		47383A2E2753971500A4650E /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A2D2753971500A4650E /* AddTaskViewController.swift */; };
+		47383A332753AA1000A4650E /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A322753AA1000A4650E /* ChannelModel.swift */; };
+		47383A362753AA2100A4650E /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A352753AA2100A4650E /* TaskModel.swift */; };
+		4770223A27528819003DF6A6 /* ApiSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4770223927528819003DF6A6 /* ApiSpeaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,12 @@
 		47194DA1274A70630079C750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47194DBA274A72420079C750 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		47194DC6274AAA130079C750 /* TableViewControlelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControlelr.swift; sourceTree = "<group>"; };
+		47383A1C2752EEEE00A4650E /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		47383A28275396C200A4650E /* AddChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelViewController.swift; sourceTree = "<group>"; };
+		47383A2D2753971500A4650E /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		47383A322753AA1000A4650E /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
+		47383A352753AA2100A4650E /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		4770223927528819003DF6A6 /* ApiSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSpeaker.swift; sourceTree = "<group>"; };
 		88DFF5E9C5A3E202CF6049D3 /* Pods-MyDoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDoto.release.xcconfig"; path = "Target Support Files/Pods-MyDoto/Pods-MyDoto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,16 +77,54 @@
 		47194D92274A705F0079C750 /* MyDoto */ = {
 			isa = PBXGroup;
 			children = (
+				47383A312753A9FA00A4650E /* Models */,
+				47383A2C275396E700A4650E /* Utility */,
+				47383A2B275396D300A4650E /* UI */,
+				47383A272753966100A4650E /* Controllers */,
 				47194D93274A705F0079C750 /* AppDelegate.swift */,
-				47194DBA274A72420079C750 /* Main.storyboard */,
 				47194D95274A705F0079C750 /* SceneDelegate.swift */,
-				47194D97274A705F0079C750 /* ViewController.swift */,
 				47194D9C274A70630079C750 /* Assets.xcassets */,
-				47194D9E274A70630079C750 /* LaunchScreen.storyboard */,
 				47194DA1274A70630079C750 /* Info.plist */,
-				47194DC6274AAA130079C750 /* TableViewControlelr.swift */,
 			);
 			path = MyDoto;
+			sourceTree = "<group>";
+		};
+		47383A272753966100A4650E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47383A1C2752EEEE00A4650E /* TasksTableViewController.swift */,
+				47194DC6274AAA130079C750 /* TableViewControlelr.swift */,
+				47194D97274A705F0079C750 /* ViewController.swift */,
+				47383A2D2753971500A4650E /* AddTaskViewController.swift */,
+				47383A28275396C200A4650E /* AddChannelViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		47383A2B275396D300A4650E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47194DBA274A72420079C750 /* Main.storyboard */,
+				47194D9E274A70630079C750 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47383A2C275396E700A4650E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4770223927528819003DF6A6 /* ApiSpeaker.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		47383A312753A9FA00A4650E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47383A322753AA1000A4650E /* ChannelModel.swift */,
+				47383A352753AA2100A4650E /* TaskModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7D919822BCA0B8ABBF410611 /* Pods */ = {
@@ -208,10 +258,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47383A1D2752EEEE00A4650E /* TasksTableViewController.swift in Sources */,
+				47383A2E2753971500A4650E /* AddTaskViewController.swift in Sources */,
+				47383A362753AA2100A4650E /* TaskModel.swift in Sources */,
 				47194D98274A705F0079C750 /* ViewController.swift in Sources */,
 				47194D94274A705F0079C750 /* AppDelegate.swift in Sources */,
 				47194D96274A705F0079C750 /* SceneDelegate.swift in Sources */,
 				47194DC7274AAA130079C750 /* TableViewControlelr.swift in Sources */,
+				47383A29275396C200A4650E /* AddChannelViewController.swift in Sources */,
+				47383A332753AA1000A4650E /* ChannelModel.swift in Sources */,
+				4770223A27528819003DF6A6 /* ApiSpeaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
