@@ -7,7 +7,7 @@
 import UIKit
 import Alamofire
 
-class tableViewController : UIViewController {
+class ChannelsTableViewController : UIViewController, UITableViewDelegate {
     let CELL_ID = "channelCell";
     var user_id: Int = 0;
     
@@ -43,7 +43,7 @@ class tableViewController : UIViewController {
     
     
     @IBSegueAction func on_create_tap(_ coder: NSCoder) -> AddChannelViewController? {
-        var controller = AddChannelViewController(coder: coder)
+        let controller = AddChannelViewController(coder: coder)
         controller?.set_user_id(id: user_id)
         return controller
     }
@@ -67,7 +67,7 @@ class tableViewController : UIViewController {
     
 }
 
-extension tableViewController: UITableViewDataSource {
+extension ChannelsTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return channelModel.channel_names.count
     }
@@ -82,15 +82,15 @@ extension tableViewController: UITableViewDataSource {
                                  commit editingStyle: UITableViewCell.EditingStyle,
                                  forRowAt indexPath: IndexPath) {
         do {
-            try speaker.delete_channel(user_id: user_id, channel_id: channelModel.channel_ids[indexPath.row])
+            try speaker.delete_channel(channel_id: channelModel.channel_ids[indexPath.row])
             channelModel.clear()
             loadData()
             tableView.reloadData()
             let alert = UIAlertController(title: "Success", message: "Successful deletion!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        } catch let error {
-            let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        } catch {
+            let alert = UIAlertController(title: "Error", message: "Problem with server occured. Please wait and try again", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
@@ -106,7 +106,4 @@ extension tableViewController: UITableViewDataSource {
     }
     
     
-}
-
-extension tableViewController: UITableViewDelegate {
 }

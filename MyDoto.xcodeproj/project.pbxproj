@@ -10,11 +10,11 @@
 		180D70236C90C66F4A4C2373 /* Pods_MyDoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403E53722B1F4CE1ECC4B984 /* Pods_MyDoto.framework */; };
 		47194D94274A705F0079C750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194D93274A705F0079C750 /* AppDelegate.swift */; };
 		47194D96274A705F0079C750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194D95274A705F0079C750 /* SceneDelegate.swift */; };
-		47194D98274A705F0079C750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194D97274A705F0079C750 /* ViewController.swift */; };
+		47194D98274A705F0079C750 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194D97274A705F0079C750 /* LoginController.swift */; };
 		47194D9D274A70630079C750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47194D9C274A70630079C750 /* Assets.xcassets */; };
 		47194DA0274A70630079C750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47194D9E274A70630079C750 /* LaunchScreen.storyboard */; };
 		47194DBB274A72420079C750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47194DBA274A72420079C750 /* Main.storyboard */; };
-		47194DC7274AAA130079C750 /* TableViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194DC6274AAA130079C750 /* TableViewControlelr.swift */; };
+		47194DC7274AAA130079C750 /* ChannelsTableViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47194DC6274AAA130079C750 /* ChannelsTableViewControlelr.swift */; };
 		47383A1D2752EEEE00A4650E /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A1C2752EEEE00A4650E /* TasksTableViewController.swift */; };
 		47383A29275396C200A4650E /* AddChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A28275396C200A4650E /* AddChannelViewController.swift */; };
 		47383A2E2753971500A4650E /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47383A2D2753971500A4650E /* AddTaskViewController.swift */; };
@@ -29,12 +29,12 @@
 		47194D90274A705F0079C750 /* MyDoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47194D93274A705F0079C750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47194D95274A705F0079C750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		47194D97274A705F0079C750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47194D97274A705F0079C750 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		47194D9C274A70630079C750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47194D9F274A70630079C750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47194DA1274A70630079C750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47194DBA274A72420079C750 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		47194DC6274AAA130079C750 /* TableViewControlelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControlelr.swift; sourceTree = "<group>"; };
+		47194DC6274AAA130079C750 /* ChannelsTableViewControlelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewControlelr.swift; sourceTree = "<group>"; };
 		47383A1C2752EEEE00A4650E /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 		47383A28275396C200A4650E /* AddChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelViewController.swift; sourceTree = "<group>"; };
 		47383A2D2753971500A4650E /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				47383A1C2752EEEE00A4650E /* TasksTableViewController.swift */,
-				47194DC6274AAA130079C750 /* TableViewControlelr.swift */,
-				47194D97274A705F0079C750 /* ViewController.swift */,
+				47194DC6274AAA130079C750 /* ChannelsTableViewControlelr.swift */,
+				47194D97274A705F0079C750 /* LoginController.swift */,
 				47383A2D2753971500A4650E /* AddTaskViewController.swift */,
 				47383A28275396C200A4650E /* AddChannelViewController.swift */,
 			);
@@ -261,10 +261,10 @@
 				47383A1D2752EEEE00A4650E /* TasksTableViewController.swift in Sources */,
 				47383A2E2753971500A4650E /* AddTaskViewController.swift in Sources */,
 				47383A362753AA2100A4650E /* TaskModel.swift in Sources */,
-				47194D98274A705F0079C750 /* ViewController.swift in Sources */,
+				47194D98274A705F0079C750 /* LoginController.swift in Sources */,
 				47194D94274A705F0079C750 /* AppDelegate.swift in Sources */,
 				47194D96274A705F0079C750 /* SceneDelegate.swift in Sources */,
-				47194DC7274AAA130079C750 /* TableViewControlelr.swift in Sources */,
+				47194DC7274AAA130079C750 /* ChannelsTableViewControlelr.swift in Sources */,
 				47383A29275396C200A4650E /* AddChannelViewController.swift in Sources */,
 				47383A332753AA1000A4650E /* ChannelModel.swift in Sources */,
 				4770223A27528819003DF6A6 /* ApiSpeaker.swift in Sources */,

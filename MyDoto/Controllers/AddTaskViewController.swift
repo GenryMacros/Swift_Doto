@@ -29,7 +29,7 @@ class AddTaskViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         } else {
             do {
-                try speaker.add_task(user_id: user_id, channel_id: channel_id, task_name: text_field.text ?? "default")
+                try speaker.add_task(channel_id: channel_id, task_name: text_field.text ?? "default")
                 let alert = UIAlertController(title: "Success", message: "Task added!", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)

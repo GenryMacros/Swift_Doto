@@ -20,7 +20,7 @@ class TasksTableViewController: UIViewController, UITableViewDelegate {
     @IBOutlet var tableView: UITableView!
     
     @IBSegueAction func on_task_add_tap(_ coder: NSCoder) -> AddTaskViewController? {
-        var controller = AddTaskViewController(coder: coder);
+        let controller = AddTaskViewController(coder: coder);
         controller?.set_user_id(id: user_id);
         controller?.set_channel_id(id: channel_id);
         return controller
@@ -37,10 +37,11 @@ class TasksTableViewController: UIViewController, UITableViewDelegate {
     }
     func loadData() {
         do {
-            let tasks = try speaker.get_tasks(user_id: user_id, channel_id: channel_id)
+            let tasks = try speaker.get_tasks(channel_id: channel_id)
             for task in tasks {
                 taskModel.task_names.append(task["Name"] as! String)
                 taskModel.task_ids.append(task["ID"] as! Int)
+                taskModel.task_is_checked.append(task["Selected"] as! Bool)
             }
         } catch let error {
             let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
@@ -76,6 +77,9 @@ extension TasksTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath)
         cell.textLabel?.text = taskModel.task_names[indexPath.row]
+        if (taskModel.task_is_checked[indexPath.row]) {
+            cell.contentView.backgroundColor = .green
+        }
         return cell
     }
     
@@ -83,7 +87,7 @@ extension TasksTableViewController: UITableViewDataSource {
                                  commit editingStyle: UITableViewCell.EditingStyle,
                                  forRowAt indexPath: IndexPath) {
         do {
-            try speaker.delete_task(user_id: user_id, channel_id: channel_id, task_id: taskModel.task_ids[indexPath.row])
+            try speaker.delete_task(task_id: taskModel.task_ids[indexPath.row])
             taskModel.clear()
             loadData()
             tableView.reloadData()
@@ -99,6 +103,21 @@ extension TasksTableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        
+        do {
+            try speaker.reselect_task(task_id: taskModel.task_ids[indexPath.row])
+            taskModel.clear()
+            loadData()
+            tableView.reloadData()
+            if (taskModel.task_is_checked[indexPath.row]) {
+                tableView.cellForRow(at: indexPath)?.contentView.backgroundColor = .green
+            }
+            else {
+                tableView.cellForRow(at: indexPath)?.contentView.backgroundColor = .white
+            }
+        } catch let error {
+            let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }

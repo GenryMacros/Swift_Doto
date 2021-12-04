@@ -10,7 +10,7 @@
         <!--Enter username-->
         <scene sceneID="Sin-lD-T9H">
             <objects>
-                <viewController title="Username enter" id="rRD-7M-T3K" userLabel="Enter username" customClass="EnterUsernameController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Username enter" id="rRD-7M-T3K" userLabel="Enter username" customClass="LoginController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="igV-QX-5Dx"/>
                         <viewControllerLayoutGuide type="bottom" id="Twd-JP-VBC"/>
@@ -77,7 +77,7 @@
         <!--Channels-->
         <scene sceneID="A2I-fv-Cd5">
             <objects>
-                <viewController id="uZd-7U-YBA" customClass="tableViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uZd-7U-YBA" customClass="ChannelsTableViewController" customModule="MyDoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="13U-MI-8AL"/>
                         <viewControllerLayoutGuide type="bottom" id="brb-X0-WxT"/>

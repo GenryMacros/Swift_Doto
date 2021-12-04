@@ -8,10 +8,7 @@
 import UIKit
 import Alamofire
 
-struct User {
-    var username: String?;
-}
-class EnterUsernameController : UIViewController {
+class LoginController : UIViewController {
     var mainController:ViewController? = nil
     var speaker: ApiSpeaker?;
     var login: String = "";
@@ -25,22 +22,17 @@ class EnterUsernameController : UIViewController {
         speaker = ApiSpeaker()
     }
     
-    @IBSegueAction func toChannelsList(_ coder: NSCoder) -> tableViewController? {
-        let responce = speaker?.login(log: login, pass: pass)
-        
-        switch responce?.type {
-        case .success:
-            break
-        case .error:
-            let alert = UIAlertController(title: "Error", message: responce?.message, preferredStyle: .alert)
+    @IBSegueAction func toChannelsList(_ coder: NSCoder) -> ChannelsTableViewController? {
+        var responce : NSDictionary?;
+        do {
+            responce = try speaker?.login(log: login, pass: pass)
+        } catch let error {
+            let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        default:
-            let alert = UIAlertController(title: "Error", message: "APP ERROR", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            return ChannelsTableViewController(coder: coder, id: 0)
         }
-        return tableViewController(coder: coder, id: responce?.id ?? 0)
+        return ChannelsTableViewController(coder: coder, id: responce?["id"] as! Int)
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
